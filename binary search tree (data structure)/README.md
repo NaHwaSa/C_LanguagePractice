@@ -6,9 +6,9 @@
 
 int main(int argc, char* argv[])
 {
+	printf("--- nonrecurrent ---\n");
 	bst_t* b = create_nonrecurrent_bst();
-	printf("--- nonrecurrent ---\n");	
-
+	
 	b->op->insert_node(b, 5);
 	b->op->insert_node(b, 3);
 	b->op->insert_node(b, 8);
@@ -21,9 +21,10 @@ int main(int argc, char* argv[])
 	b->op->print_bfs(b);
 	b->op->print_dfs(b);
 
-	b = create_recursive_bst();
-	printf("--- recursive ---\n");	
 
+	printf("--- recursive ---\n");	
+	b = create_recursive_bst();
+	
 	b->op->insert_node(b, 5);
 	b->op->insert_node(b, 3);
 	b->op->insert_node(b, 8);
