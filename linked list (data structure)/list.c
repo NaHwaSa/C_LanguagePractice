@@ -21,8 +21,8 @@ static node_t* get_tail_node(list_t* l);
 static void insert_to_before_node(list_t* l, node_t* pos, void* data);
 
 /*
-* Operations can be override
-* Someone who want change operations, make own create_list function and change '&op' to another
+* Operations can be overriden
+* Someone who wants to change the operations can make their own create_list function and change '&op' to another
 */
 static struct list_operations op =
    {
@@ -55,8 +55,8 @@ list_t* create_list()
 }
 
 /*
-* c language don't provide the way to release memory
-* so programmer must provide destroy function
+* c language doesn't provide the way to release memory
+* so programmers must provide a destroy function
 */
 static void destroy(list_t* l)
 {
