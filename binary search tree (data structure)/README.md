@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
 	b->op->print_bfs(b);
 	b->op->print_dfs(b);
 
-	b = create_nonrecurrent_bst();
+	b = create_recursive_bst();
 	printf("--- recursive ---\n");	
 
 	b->op->insert_node(b, 5);
