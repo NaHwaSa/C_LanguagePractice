@@ -1,6 +1,6 @@
 ## U can test it like this :
 
-
+~~~
 #include<stdio.h>
 #include<stdlib.h>
 #include"list.h"
@@ -32,5 +32,5 @@ int main(int argc, char* argv[]) {
 	
 	l->op->destroy(l);
 }
-
+~~~
 
