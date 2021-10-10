@@ -1,6 +1,12 @@
-U can test it like this :
+## U can test it like this :
 
-list_t* l = create_list();
+
+#include<stdio.h>
+#include<stdlib.h>
+#include"list.h"
+
+int main(int argc, char* argv[]) {
+	list_t* l = create_list();
 	
 	printf("--- insert test ---\n");
 	l->op->insert_to_head(l, "aaa");
@@ -25,3 +31,6 @@ list_t* l = create_list();
 	l->op->print(l);	
 	
 	l->op->destroy(l);
+}
+
+
